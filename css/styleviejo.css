@@ -1,0 +1,74 @@
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+        "top-left-icon title links"
+        "img-taylor-home none texto-home"
+        "footer footer footer";
+
+    
+}
+
+.menu{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: links;
+    /* position: relative;
+    left: 300px;
+    margin: 30px; */
+}
+
+h1#taylor-title{
+    grid-area: title;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.top-left-icon{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-area: top-left-icon;
+    border: 1px solid black;
+}
+
+.center-icon{
+    position: relative;
+    left: 500px;    
+}
+
+
+span#texto-home{
+    max-width: 50%;
+    float:right;
+    grid-area: texto-home;
+}
+
+img#img-taylor-home{
+    max-width: 50%;
+    max-height: 500px;
+    grid-area: img-taylor-home;
+}
+
+.container {
+    border: 2px solid black;
+}
+
+#boton-comprar {
+    background-color: blue;
+    margin: 100px;
+}
+
+.imagen-compras {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+footer {
+    grid-area: footer;
+}
