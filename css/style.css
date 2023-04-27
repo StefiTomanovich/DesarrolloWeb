@@ -6,6 +6,16 @@
     
 }
 
+#grillaDiscos{
+    display:grid;
+    grid-template-areas: 
+    "disco disco disco disco"
+    "disco disco disco disco"
+    ;
+    row-gap: 20px;
+}
+
+
 
 .menu{
     display: flex;
@@ -13,6 +23,10 @@
     flex-direction: row;
     justify-content: space-between;
     grid-area: links;
+}
+
+div#disco{
+    display: flex;
 }
 
 .top-left-icon{
@@ -58,4 +72,9 @@ h1#taylor-title{
     width: 100px;
     height: 100px;
     background-color: green;
+    grid-area: imagen-compras;
+}
+
+.spotify-icon{
+    grid-area: spotify-icon;
 }
