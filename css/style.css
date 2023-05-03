@@ -6,6 +6,7 @@
     
 }
 
+
 #grillaDiscos{
     display:grid;
     grid-template-areas: 
@@ -15,7 +16,9 @@
     row-gap: 20px;
 }
 
-
+div#merch{
+    grid-area: merch;
+}
 
 .menu{
     display: flex;
@@ -64,7 +67,8 @@ h1#taylor-title{
 
 #boton-comprar {
     background-color: blue;
-    margin: 100px;
+    grid-area: boton-comprar;
+    max-width: 100px;
 }
 
 .imagen-compras {
@@ -74,6 +78,7 @@ h1#taylor-title{
     background-color: green;
     grid-area: imagen-compras;
 }
+
 
 .spotify-icon{
     grid-area: spotify-icon;
