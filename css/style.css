@@ -1,85 +1,80 @@
-#grillatop{
-    display: grid;
-    grid-template-areas:
-        "top-left-icon title links";
-
-    
+/* Posibles Valores: red, speaknow, lover */
+#grillatop {
+  display: grid;
+  grid-template-areas: "top-left-icon title links";
 }
 
-
-#grillaDiscos{
-    display:grid;
-    grid-template-areas: 
-    "disco disco disco disco"
-    "disco disco disco disco"
-    ;
-    row-gap: 20px;
+#grillaDiscos {
+  display: grid;
+  grid-template-areas: "disco disco disco disco" "disco disco disco disco";
+  row-gap: 20px;
 }
 
-div#merch{
-    grid-area: merch;
+div#merch {
+  grid-area: merch;
 }
 
-.menu{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-area: links;
+.menu {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: links;
 }
 
-div#disco{
-    display: flex;
+div#disco {
+  display: flex;
 }
 
-.top-left-icon{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    grid-area: top-left-icon;
+.top-left-icon {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  grid-area: top-left-icon;
 }
 
-.center-icon{
-    position: relative;
-    left: 500px;    
+.center-icon {
+  position: relative;
+  left: 500px;
 }
 
-h1#taylor-title{
-    /* position: relative;
-    left: 500px; */
-    grid-area: title;
+h1#taylor-title {
+  /* position: relative;
+  left: 500px; */
+  grid-area: title;
 }
 
-#texto-home{
-    max-width: 50%;
-    float:right;
+#texto-home {
+  max-width: 50%;
+  float: right;
 }
 
-#img-taylor-home{
-    max-width: 50%;
-    max-height: 500px;
+#img-taylor-home {
+  max-width: 50%;
+  max-height: 500px;
 }
 
 .container {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 #boton-comprar {
-    background-color: blue;
-    grid-area: boton-comprar;
-    max-width: 100px;
+  background-color: pink;
+  grid-area: boton-comprar;
+  max-width: 100px;
 }
 
 .imagen-compras {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    grid-area: imagen-compras;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  grid-area: imagen-compras;
 }
 
-
-.spotify-icon{
-    grid-area: spotify-icon;
+.spotify-icon {
+  grid-area: spotify-icon;
 }
+
+/*# sourceMappingURL=style.css.map */
