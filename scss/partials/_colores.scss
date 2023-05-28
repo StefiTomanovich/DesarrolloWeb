@@ -1,0 +1,13 @@
+@if $gama-colores == red{
+    $color-comprar: black;
+    $color-imagen-compras: red;    
+} @else if $gama-colores == speaknow{
+    $color-comprar: purple;
+    $color-imagen-compras: #ffffa0;
+} @else if $gama-colores== lover{
+    $color-comprar: pink;
+    $color-imagen-compras: lightblue;
+} @else {
+    $color-comprar: #0000ff;
+    $color-imagen-compras: #00ff00;
+}

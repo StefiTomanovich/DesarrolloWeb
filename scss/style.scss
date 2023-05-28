@@ -1,19 +1,7 @@
 @import 'partials/variables';
+@import 'partials/colores';
 
 
-@if $gama-colores == red{
-    $color-comprar: black;
-    $color-imagen-compras: red;    
-} @else if $gama-colores == speaknow{
-    $color-comprar: purple;
-    $color-imagen-compras: #ffffa0;
-} @else if $gama-colores== lover{
-    $color-comprar: pink;
-    $color-imagen-compras: lightblue;
-} @else {
-    $color-comprar: #0000ff;
-    $color-imagen-compras: #00ff00;
-}
 
 
 
@@ -35,7 +23,7 @@
     row-gap: $row-gap;
 }
 
-div#merch{
+    div#merch{
     grid-area: merch;
 }
 
@@ -73,6 +61,7 @@ h1#taylor-title{
 #texto-home{
     max-width: 50%;
     float:right;
+
 }
 
 #img-taylor-home{
@@ -101,4 +90,35 @@ h1#taylor-title{
 
 .spotify-icon{
     grid-area: spotify-icon;
+}
+
+$vista:mobile;
+$h1Desktop: 3rem;
+$h1Mobile: 1.2rem;
+@media only screen and (min-width:760px){
+    h1#taylor-title{font-size: 2rem;}
+    .menu-item{font-size: 1.2rem;}
+    #texto-home{font-size: 1rem;}
+
+}
+
+@media only screen and (max-width:759px){
+    h1#taylor-title{font-size: 0.5rem;}
+    .menu-item{font-size: 0.3rem;}
+    #texto-home{font-size: 0.35rem;}
+}
+body{
+@if $vista == desktop {
+	@media only screen and (min-width:700px){
+		h1{font-size:$h1Desktop;}
+		}
+	} @else if $vista == mobile {
+		@media only screen and (max-width:700px){
+			h1{font-size:$h1Mobile;
+                   font-family: 'Courier New', Courier, monospace;
+                    }
+		}
+	} @else {
+		h1{font-size:1rem;}
+	}
 }
