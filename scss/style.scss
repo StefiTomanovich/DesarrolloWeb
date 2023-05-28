@@ -16,11 +16,13 @@
 
 #grillaDiscos{
     display:grid;
-    grid-template-areas: 
-    "disco disco disco disco"
-    "disco disco disco disco"
-    ;
     row-gap: $row-gap;
+    grid-template-areas: 
+        "disco disco"
+        "disco disco"
+        "disco disco"
+        "disco disco"
+        ;
 }
 
     div#merch{
@@ -92,9 +94,7 @@ h1#taylor-title{
     grid-area: spotify-icon;
 }
 
-$vista:mobile;
-$h1Desktop: 3rem;
-$h1Mobile: 1.2rem;
+
 @media only screen and (min-width:760px){
     h1#taylor-title{font-size: 2rem;}
     .menu-item{font-size: 1.2rem;}
@@ -106,19 +106,5 @@ $h1Mobile: 1.2rem;
     h1#taylor-title{font-size: 0.5rem;}
     .menu-item{font-size: 0.3rem;}
     #texto-home{font-size: 0.35rem;}
-}
-body{
-@if $vista == desktop {
-	@media only screen and (min-width:700px){
-		h1{font-size:$h1Desktop;}
-		}
-	} @else if $vista == mobile {
-		@media only screen and (max-width:700px){
-			h1{font-size:$h1Mobile;
-                   font-family: 'Courier New', Courier, monospace;
-                    }
-		}
-	} @else {
-		h1{font-size:1rem;}
-	}
+    #disco{width: 10px;}
 }

@@ -6,8 +6,8 @@
 
 #grillaDiscos {
   display: grid;
-  grid-template-areas: "disco disco disco disco" "disco disco disco disco";
   row-gap: 20px;
+  grid-template-areas: "disco disco" "disco disco" "disco disco" "disco disco";
 }
 
 div#merch {
@@ -87,6 +87,11 @@ h1#taylor-title {
   #texto-home {
     font-size: 1rem;
   }
+  #grilla-discos {
+    grid-template-areas: "disco disco disco disco" "disco disco disco disco";
+    display: grid;
+    row-gap: 20px;
+  }
 }
 @media only screen and (max-width: 759px) {
   h1#taylor-title {
@@ -97,6 +102,12 @@ h1#taylor-title {
   }
   #texto-home {
     font-size: 0.35rem;
+  }
+  #disco {
+    width: 10px;
+  }
+  #grilla-discos {
+    grid-template-areas: "disco disco" "disco disco" "disco disco" "disco disco";
   }
 }
 @media only screen and (max-width: 700px) {
