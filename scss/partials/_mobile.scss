@@ -1,0 +1,14 @@
+
+@media only screen and (min-width:760px){
+    h1#taylor-title{font-size: 2rem;}
+    .menu-item{font-size: 1.2rem;}
+    #texto-home{font-size: 1rem;}
+
+}
+
+@media only screen and (max-width:759px){
+    h1#taylor-title{font-size: 0.5rem;}
+    .menu-item{font-size: 0.3rem;}
+    #texto-home{font-size: 0.35rem;}
+    #disco{width: 10px;}
+}

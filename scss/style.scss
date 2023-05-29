@@ -1,58 +1,12 @@
 @import 'partials/variables';
 @import 'partials/colores';
+@import 'partials/allpages';
+@import 'partials/discografia';
+@import 'partials/mobile';
 
 
 
-
-
-#grillatop{
-    display: grid;
-    grid-template-areas:
-        "top-left-icon title links";
-
-    
-}
-
-
-#grillaDiscos{
-    display:grid;
-    row-gap: $row-gap;
-    grid-template-areas: 
-        "disco disco"
-        "disco disco"
-        "disco disco"
-        "disco disco"
-        ;
-}
-
-    div#merch{
-    grid-area: merch;
-}
-
-.menu{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-area: links;
-}
-
-div#disco{
-    display: flex;
-}
-
-.top-left-icon{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    grid-area: top-left-icon;
-}
-
-.center-icon{
-    position: relative;
-    left: 500px;    
-}
+/* Home Page*/
 
 h1#taylor-title{
     /* position: relative;
@@ -60,19 +14,30 @@ h1#taylor-title{
     grid-area: title;
 }
 
+
 #texto-home{
     max-width: 50%;
     float:right;
 
 }
 
+
+
 #img-taylor-home{
     max-width: 50%;
     max-height: 500px;
 }
+/* Merch*/
 
-.container {
-    border: 2px solid black;
+
+
+    div#merch{
+    grid-area: merch;
+}
+
+.center-icon{
+    position: relative;
+    left: 500px;    
 }
 
 #boton-comprar {
@@ -87,24 +52,4 @@ h1#taylor-title{
     height: $imagen-compras-height;
     background-color: $color-imagen-compras;
     grid-area: imagen-compras;
-}
-
-
-.spotify-icon{
-    grid-area: spotify-icon;
-}
-
-
-@media only screen and (min-width:760px){
-    h1#taylor-title{font-size: 2rem;}
-    .menu-item{font-size: 1.2rem;}
-    #texto-home{font-size: 1rem;}
-
-}
-
-@media only screen and (max-width:759px){
-    h1#taylor-title{font-size: 0.5rem;}
-    .menu-item{font-size: 0.3rem;}
-    #texto-home{font-size: 0.35rem;}
-    #disco{width: 10px;}
 }

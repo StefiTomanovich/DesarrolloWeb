@@ -1,0 +1,18 @@
+#grillaDiscos{
+    display:grid;
+    row-gap: $row-gap;
+    grid-template-areas: 
+        "disco disco"
+        "disco disco"
+        "disco disco"
+        "disco disco"
+        ;
+}
+
+div#disco{
+    display: flex;
+}
+
+.spotify-icon{
+    grid-area: spotify-icon;
+}
